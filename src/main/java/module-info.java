@@ -5,6 +5,7 @@ module com.example.project1 {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires java.sql;
+    requires fontawesomefx;
 
     opens com.example.project1 to javafx.fxml;
     exports com.example.project1;

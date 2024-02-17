@@ -20,13 +20,13 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.AdminPageController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="1318.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.AdminPageController">
    <children>
-      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+      <ScrollPane prefHeight="730.0" prefWidth="1279.0">
          <content>
-            <BorderPane prefHeight="528.0" prefWidth="1160.0" stylesheets="@Design/MainForm.css">
+            <BorderPane prefHeight="730.0" prefWidth="1292.0" stylesheets="@Design/MainForm.css">
                <top>
-                  <AnchorPane fx:id="teacher_frim" prefHeight="41.0" prefWidth="1028.0" styleClass="main-bg" stylesheets="@Design/MainForm.css" BorderPane.alignment="CENTER">
+                  <AnchorPane fx:id="teacher_frim" prefHeight="67.0" prefWidth="1305.0" styleClass="main-bg" stylesheets="@Design/MainForm.css" BorderPane.alignment="CENTER">
                      <children>
                         <Label layoutX="14.0" layoutY="19.0" text="Admin Dashboard" textFill="WHITE">
                            <font>
@@ -39,9 +39,9 @@
                <left>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="main-bg" stylesheets="@Design/MainForm.css" BorderPane.alignment="CENTER">
                      <children>
-                        <AnchorPane layoutX="7.0" prefHeight="471.0" prefWidth="200.0">
+                        <AnchorPane layoutX="7.0" prefHeight="666.0" prefWidth="255.0">
                            <children>
-                              <Button fx:id="student_btn" layoutX="21.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="Students">
+                              <Button fx:id="student_btn" layoutX="39.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="Students">
                                  <styleClass>
                                     <String fx:value="btn" />
                                     <String fx:value="nav-btn" />
@@ -58,7 +58,7 @@
                                     </FontAwesomeIcon>
                                  </graphic>
                               </Button>
-                              <Button fx:id="center_btn" layoutX="21.0" layoutY="211.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="145.0" text="Centers">
+                              <Button fx:id="center_btn" layoutX="39.0" layoutY="250.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="145.0" text="Centers">
                                  <styleClass>
                                     <String fx:value="btn" />
                                     <String fx:value="nav-btn" />
@@ -71,7 +71,7 @@
                                     <FontAwesomeIcon fill="WHITE" size="1.5em" />
                                  </graphic>
                               </Button>
-                              <Button fx:id="teacher_btn" layoutX="22.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="Teachers">
+                              <Button fx:id="teacher_btn" layoutX="39.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="Teachers">
                                  <styleClass>
                                     <String fx:value="btn" />
                                     <String fx:value="nav-btn" />
@@ -84,7 +84,7 @@
                                     <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="1.5em" />
                                  </graphic>
                               </Button>
-                              <Button fx:id="logout_btn" layoutX="22.0" layoutY="376.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="LogOut">
+                              <Button fx:id="logout_btn" layoutX="39.0" layoutY="446.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="LogOut">
                                  <styleClass>
                                     <String fx:value="btn" />
                                     <String fx:value="nav-btn" />
@@ -97,7 +97,7 @@
                                     <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="1.5em" text="" />
                                  </graphic>
                               </Button>
-                              <Button fx:id="dashboard_btn" layoutX="22.0" layoutY="163.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="Dashboard">
+                              <Button fx:id="dashboard_btn" layoutX="39.0" layoutY="192.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="144.0" text="Dashboard">
                                  <styleClass>
                                     <String fx:value="btn" />
                                     <String fx:value="nav-btn" />
@@ -110,12 +110,12 @@
                                     <FontAwesomeIcon fx:id="dashbaord_btn" fill="WHITE" glyphName="DASHBOARD" size="1.5em" text="" />
                                  </graphic>
                               </Button>
-                              <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="46.0" layoutY="95.0" selectionEnd="0" size="7em" wrappingWidth="94.28571319580078">
+                              <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="80.0" layoutY="100.0" selectionEnd="0" size="7em" wrappingWidth="94.28571319580078">
                                  <font>
                                     <Font size="62.0" />
                                  </font>
                               </FontAwesomeIcon>
-                              <Label layoutX="25.0" layoutY="120.0" text="Welcome, Joumana" textFill="WHITE">
+                              <Label layoutX="42.0" layoutY="147.0" text="Welcome, Joumana" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
@@ -126,7 +126,7 @@
                   </AnchorPane>
                </left>
                <center>
-                  <AnchorPane prefHeight="487.0" prefWidth="739.0" BorderPane.alignment="CENTER">
+                  <AnchorPane prefHeight="666.0" prefWidth="1008.0" BorderPane.alignment="CENTER">
                      <children>
                         <AnchorPane fx:id="center_form" prefHeight="469.0" prefWidth="947.0">
                            <children>
@@ -163,11 +163,11 @@
                                     </Label>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="dashboard_form" prefHeight="472.0" prefWidth="943.0">
+                              <AnchorPane fx:id="dashboard_form" prefHeight="665.0" prefWidth="1083.0">
                                  <children>
                                     <AnchorPane layoutX="23.0" layoutY="161.0" prefHeight="233.0" prefWidth="349.0">
                                        <children>
-                                          <AreaChart fx:id="student_Chart" layoutX="6.0" layoutY="14.0" prefHeight="282.0" prefWidth="343.0" title="Data of Students">
+                                          <AreaChart fx:id="student_Chart" layoutX="-1.0" layoutY="17.0" prefHeight="464.0" prefWidth="656.0" title="Data of Students">
                                             <xAxis>
                                               <CategoryAxis side="BOTTOM" />
                                             </xAxis>
@@ -175,13 +175,14 @@
                                               <NumberAxis side="LEFT" />
                                             </yAxis>
                                           </AreaChart>
+                                          <Line endX="-12.0" endY="-188.0" layoutX="485.0" layoutY="282.0" startX="-357.6667175292969" startY="100.33328247070312" stroke="#3811ff" strokeWidth="3.0" />
                                        </children>
                                     </AnchorPane>
-                                    <ScrollPane prefHeight="149.0" prefWidth="947.0">
+                                    <ScrollPane layoutY="13.0" prefHeight="149.0" prefWidth="1072.0">
                                       <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="145.0" prefWidth="938.0">
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="1169.0">
                                              <children>
-                                                <AnchorPane layoutX="14.0" layoutY="23.0" prefHeight="95.0" prefWidth="213.0">
+                                                <AnchorPane layoutX="32.0" layoutY="23.0" prefHeight="95.0" prefWidth="213.0">
                                                    <styleClass>
                                                       <String fx:value="main-bg" />
                                                       <String fx:value="radius" />
@@ -199,10 +200,10 @@
                                                          <font>
                                                             <Font size="18.0" />
                                                          </font></Label>
-                                                      <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="175.0" layoutY="33.0" size="1.5em" />
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="175.0" layoutY="33.0" size="2em" />
                                                    </children>
                                                 </AnchorPane>
-                                                <AnchorPane layoutX="255.0" layoutY="23.0" prefHeight="95.0" prefWidth="213.0" stylesheets="@Design/MainForm.css">
+                                                <AnchorPane layoutX="269.0" layoutY="25.0" prefHeight="95.0" prefWidth="213.0" stylesheets="@Design/MainForm.css">
                                                    <styleClass>
                                                       <String fx:value="radius" />
                                                       <String fx:value="main-bg" />
@@ -216,7 +217,7 @@
                                                          <font>
                                                             <Font size="18.0" />
                                                          </font></Label>
-                                                      <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="172.0" layoutY="39.0" size="1.5em" />
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="172.0" layoutY="39.0" size="2em" />
                                                       <Label layoutX="24.0" layoutY="58.0" textFill="WHITE">
                                                          <font>
                                                             <Font size="18.0" />
@@ -224,7 +225,7 @@
                                                       </Label>
                                                    </children>
                                                 </AnchorPane>
-                                                <AnchorPane layoutX="490.0" layoutY="25.0" prefHeight="95.0" prefWidth="213.0" stylesheets="@Design/MainForm.css">
+                                                <AnchorPane layoutX="530.0" layoutY="25.0" prefHeight="95.0" prefWidth="213.0" stylesheets="@Design/MainForm.css">
                                                    <styleClass>
                                                       <String fx:value="main-bg" />
                                                       <String fx:value="radius" />
@@ -238,10 +239,10 @@
                                                          <font>
                                                             <Font size="18.0" />
                                                          </font></Label>
-                                                      <FontAwesomeIcon fill="WHITE" layoutX="169.0" layoutY="33.0" size="1.5em" />
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="BUILDING" layoutX="169.0" layoutY="33.0" size="2em" />
                                                    </children>
                                                 </AnchorPane>
-                                                <AnchorPane layoutX="716.0" layoutY="28.0" prefHeight="93.0" prefWidth="200.0" stylesheets="@Design/MainForm.css">
+                                                <AnchorPane layoutX="791.0" layoutY="24.0" prefHeight="93.0" prefWidth="200.0" stylesheets="@Design/MainForm.css">
                                                    <styleClass>
                                                       <String fx:value="main-bg" />
                                                       <String fx:value="radius" />
@@ -255,16 +256,17 @@
                                                          <font>
                                                             <Font size="20.0" />
                                                          </font></Label>
-                                                      <FontAwesomeIcon fill="WHITE" glyphName="MONEY" layoutX="154.0" layoutY="39.0" size="1.5em" text="" />
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="MONEY" layoutX="154.0" layoutY="39.0" size="2em" text="" />
                                                    </children>
                                                 </AnchorPane>
                                              </children>
                                           </AnchorPane>
                                       </content>
                                     </ScrollPane>
-                                    <AnchorPane layoutX="457.0" layoutY="309.0" prefHeight="153.0" prefWidth="386.0">
+                                    <AnchorPane layoutX="457.0" layoutY="309.0" prefHeight="153.0" prefWidth="386.0" />
+                                    <AnchorPane layoutX="467.0" layoutY="159.0" prefHeight="133.0" prefWidth="567.0">
                                        <children>
-                                          <AreaChart fx:id="Center_Chart" layoutX="22.0" prefHeight="150.0" prefWidth="430.0" title="Data of Centers">
+                                          <AreaChart fx:id="teacher_Chart" layoutX="182.0" layoutY="14.0" prefHeight="230.0" prefWidth="479.0" title="Data of Teachers">
                                             <xAxis>
                                               <CategoryAxis side="BOTTOM" />
                                             </xAxis>
@@ -272,23 +274,18 @@
                                               <NumberAxis side="LEFT" />
                                             </yAxis>
                                           </AreaChart>
-                                          <Line endX="73.66668701171875" endY="-49.000030517578125" layoutX="200.0" layoutY="120.0" startX="-90.99993896484375" startY="-7.000030517578125" stroke="#012d11" strokeWidth="2.0" />
-                                          <Line endX="-117.66665649414062" endY="59.6666259765625" startX="-357.6667175292969" startY="100.33328247070312" stroke="#3811ff" strokeWidth="3.0" />
+                                          <Line endX="100.0" layoutX="396.0" layoutY="69.0" startX="-29.0" startY="118.0" stroke="#ff1818" strokeWidth="2.0" />
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane layoutX="373.0" layoutY="159.0" prefHeight="133.0" prefWidth="202.0">
-                                       <children>
-                                          <AreaChart fx:id="teacher_Chart" layoutX="103.0" prefHeight="150.0" prefWidth="444.0" title="Data of Teachers">
-                                            <xAxis>
-                                              <CategoryAxis side="BOTTOM" />
-                                            </xAxis>
-                                            <yAxis>
-                                              <NumberAxis side="LEFT" />
-                                            </yAxis>
-                                          </AreaChart>
-                                          <Line endX="100.0" layoutX="300.0" layoutY="50.0" startX="-133.6666259765625" startY="63.6666259765625" stroke="#ff1818" strokeWidth="2.0" />
-                                       </children>
-                                    </AnchorPane>
+                                    <AreaChart fx:id="Center_Chart" layoutX="650.0" layoutY="385.0" prefHeight="244.0" prefWidth="377.0" title="Data of Centers">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </AreaChart>
+                                    <Line endX="21.0" endY="-95.0" layoutX="917.0" layoutY="557.0" startX="-190.0" startY="11.0" stroke="#012d11" strokeWidth="2.0" />
                                  </children>
                               </AnchorPane>
                               <AnchorPane fx:id="teacher_form" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="946.0" visible="false">
