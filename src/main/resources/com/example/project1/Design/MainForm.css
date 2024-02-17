@@ -49,8 +49,8 @@ and open the template in the editor.
     -fx-text-fill: #fff;
 }
 .nav-btn:hover{
-    -fx-background-color: #0abfa4;
-    -fx-border-color: #0abfa4;
+    -fx-background-color: #d3d3d3;
+    -fx-border-color: #d3d3d3;
 }
 
 .table-view{

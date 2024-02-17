@@ -41,9 +41,9 @@
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="139.0" layoutY="414.0" mnemonicParsing="false" onAction="#signUpStudent" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #0096FF; -fx-font-size: 20px;" text="Create Account">
+                  <Button layoutX="139.0" layoutY="414.0" mnemonicParsing="false" onAction="#signUpStudent" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #0096FF; -fx-font-size: 20px;" text="Create Account" textFill="WHITE">
                      <font>
-                        <Font name="Arial Bold" size="25.0" />
+                        <Font name="Arial Bold" size="37.0" />
                      </font>
                   </Button>
                   <Label layoutX="203.0" layoutY="435.0" />
@@ -82,6 +82,9 @@
                         <MenuItem id="2" text="Center" />
                         <MenuItem id="3" mnemonicParsing="false" text="Student" />
                     </items>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
                   </MenuButton>
                </children>
             </AnchorPane>
