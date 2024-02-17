@@ -6,3 +6,4 @@
 5,abed,2021,c2,A,1345.0,Pending,2024-02-16,Enrolled,true
 1200,fatima,2021,c2,B,12090.0,Pending,2024-02-17,Active,false
 112910,fatima abed ,2023,c1121212,D,1111.0,Paid,2024-02-17,Graduated,false
+1020,nour,2022,c10,C,10.0,Pending,2024-02-17,Enrolled,false

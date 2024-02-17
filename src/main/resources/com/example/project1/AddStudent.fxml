@@ -49,7 +49,7 @@
                   <Label layoutX="96.0" layoutY="189.0" text="Year:" />
                   <ComboBox fx:id="student_year" layoutX="138.0" layoutY="184.0" prefWidth="150.0" promptText="Choose..." styleClass="btn" stylesheets="@Design/AddStudent.css" />
                   <Label layoutX="80.0" layoutY="225.0" text="Course:" />
-                  <ComboBox fx:id="student_course" layoutX="138.0" layoutY="221.0" onAction="#courseList" prefWidth="150.0" promptText="Choose..." styleClass="btn" stylesheets="@Design/AddStudent.css" />
+                  <ComboBox fx:id="student_course" layoutX="138.0" layoutY="221.0"  prefWidth="150.0" promptText="Choose..." styleClass="btn" stylesheets="@Design/AddStudent.css" />
                   <Label layoutX="79.0" layoutY="260.0" text="Section:" />
                   <Label layoutX="406.0" layoutY="68.0" text="Gender:" />
                   <ComboBox fx:id="student_gender" layoutX="467.0" layoutY="63.0" prefWidth="150.0" promptText="Choose..." styleClass="btn" stylesheets="@Design/AddStudent.css" />

@@ -82,10 +82,7 @@
                         <Font name="SansSerif Regular" size="12.0" />
                      </font>
                   </PasswordField>
-                  <RadioButton fx:id="rButton3" layoutX="238.0" layoutY="132.0" mnemonicParsing="false" text="Center">
-                     <toggleGroup>
-                        <ToggleGroup fx:id="loginChoice1" />
-                     </toggleGroup>
+                  <RadioButton fx:id="rButton3" layoutX="238.0" layoutY="132.0" mnemonicParsing="false" text="Center" toggleGroup="$loginChoice">
                      <font>
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
