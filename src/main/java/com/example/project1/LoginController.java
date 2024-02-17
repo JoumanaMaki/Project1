@@ -59,11 +59,45 @@ public class LoginController {
                     e.printStackTrace();
                 }
             }
-            if(usernameField.getText().equals("Joumana")&&passwordField.getText().equals("123")){
+           else if(usernameField.getText().equals("Joumana")&&passwordField.getText().equals("123")){
                 ListData.center_username=usernameField.getText();
                 try {
                     ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
-                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Teacher.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Center.fxml"));
+                    StackPane stackPane = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    Scene scene=new Scene(stackPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Center Page");
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+    }
+        if(rButton2.isSelected()){
+            if(usernameField.getText().equals("FatimaSheaib")&&passwordField.getText().equals("123")){
+                ListData.teacher_username=usernameField.getText();
+                try {
+                    ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("TeacherPage.fxml"));
+                    StackPane stackPane = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    Scene scene=new Scene(stackPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Teacher Page");
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(usernameField.getText().equals("Joumana")&&passwordField.getText().equals("123")){
+                ListData.center_username=usernameField.getText();
+                try {
+                    ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("TeacherPage.fxml"));
                     StackPane stackPane = fxmlLoader.load();
                     Stage stage = new Stage();
                     Scene scene=new Scene(stackPane);
@@ -76,7 +110,7 @@ public class LoginController {
             }
 
 
-    }
+        }
 
     }
 
