@@ -26,6 +26,7 @@ public class StudentData {
     private Date dateInsert;
     private String status;
 
+    private String test;
    private Boolean is_validated;
     public StudentData(String studentID, String fullName,
             Date birthDate, String year, String course, String section,String gender,String semester,
