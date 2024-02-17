@@ -33,6 +33,18 @@ public class SignUpController {
 
     @FXML
     void signUpStudent(ActionEvent event) {
+        try {
+            ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            AnchorPane anchorPane = fxmlLoader.load();
+            Stage stage = new Stage();
+            Scene scene=new Scene(anchorPane);
+            stage.setScene(scene);
+            stage.setTitle("Login");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
