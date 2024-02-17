@@ -158,12 +158,6 @@ public class TeacherPageController1 {
 
     @FXML
     private Button updateCoursebtn;
-
-    @FXML
-    void Delete_andwrite(ActionEvent event) {
-
-    }
-
     @FXML
     void addCourseSelectItem(MouseEvent event) {
 
@@ -427,5 +421,138 @@ public void addStudentDisplayData() {
         addCourse_department.setText("");
         addCourse_price.setText("");
         addCourse_status.getSelectionModel().select(0);
+    }
+    @FXML
+    public ObservableList<CourseData> addCourseDeleteBtn(String courseToDelete) {
+        ObservableList<CourseData> listData = FXCollections.observableArrayList();
+        try (BufferedReader reader = new BufferedReader(new FileReader("courses.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                int courseid = Integer.parseInt(parts[0].trim());
+                String Course = parts[1].trim();
+                String dep = parts[2].trim();
+                double price = parts[3].trim().isEmpty() ? 0.0 : Double.parseDouble(parts[3].trim());
+                java.sql.Date date = java.sql.Date.valueOf(parts[4].trim());
+                String status = parts[5].trim();
+                if(!courseToDelete.equals(Course)){
+                    CourseData cData = new CourseData(courseid, Course, dep, price, date, status);
+                    listData.add(cData);
+                }
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return listData;
+    }
+    public void writeToFileAfterDeletion(String courseToDelete){
+        ObservableList<CourseData> C=addCourseDeleteBtn(courseToDelete);
+        try (FileWriter writer = new FileWriter("courses.txt")) {
+            System.out.println("empty");
+        } catch (IOException evp) {
+            evp.printStackTrace();
+            // Handle file writing errors
+        }
+        for (CourseData c :C) {
+            try (FileWriter writer = new FileWriter("courses.txt", true)) { // true for append mode
+                writer.write(c.toString());
+                System.out.println("Data written to file successfully.");
+            } catch (IOException ev) {
+                ev.printStackTrace();
+
+            }
+        }
+        displaytafterdeleted();
+
+    }
+    @FXML
+    public void Delete_andwrite(ActionEvent e){
+        if(!addCourse_course.getText().equals("")){
+            writeToFileAfterDeletion(addCourse_course.getText().toString());}
+    }
+    private ObservableList<CourseData> CourseListDataAfterDeletion;
+    public void displaytafterdeleted(){
+        CourseListDataAfterDeletion= addCourseDeleteBtn("");
+        addCourse_col_course.setCellValueFactory(new PropertyValueFactory<>("course"));
+        addCourse_col_department.setCellValueFactory(new PropertyValueFactory<>("department"));
+        addCourse_col_price.setCellValueFactory(new PropertyValueFactory<>("price"));
+        addCourse_col_dateInsert.setCellValueFactory(new PropertyValueFactory<>("dateInsert"));
+        addCourse_col_status.setCellValueFactory(new PropertyValueFactory<>("status"));
+        addCourse_tableView.setItems(CourseListDataAfterDeletion);
+        clearCourse();
+
+    }
+    @FXML
+    void update_andwrite(ActionEvent event) {
+        if(!addCourse_course.getText().equals("")){
+            writeToFileAfterUpdate(addCourse_course.getText().toString());}
+    }
+
+    private void writeToFileAfterUpdate(String courseToUpdate) {
+        ObservableList<CourseData> C=addCourseUpdateBtn(courseToUpdate);
+        try (FileWriter writer = new FileWriter("courses.txt")) {
+            System.out.println("empty");
+        } catch (IOException evp) {
+            evp.printStackTrace();
+            // Handle file writing errors
+        }
+        for (CourseData c :C) {
+            try (FileWriter writer = new FileWriter("courses.txt", true)) { // true for append mode
+                writer.write(c.toString());
+                System.out.println("Data written to file successfully.");
+            } catch (IOException ev) {
+                ev.printStackTrace();
+
+            }
+        }
+        displaytafterupdated();
+    }
+    private ObservableList<CourseData> CourseListDataAfterUpdate;
+    private void displaytafterupdated() {
+        CourseListDataAfterUpdate= addCourseUpdateBtn("");
+        addCourse_col_course.setCellValueFactory(new PropertyValueFactory<>("course"));
+        addCourse_col_department.setCellValueFactory(new PropertyValueFactory<>("department"));
+        addCourse_col_price.setCellValueFactory(new PropertyValueFactory<>("price"));
+        addCourse_col_dateInsert.setCellValueFactory(new PropertyValueFactory<>("dateInsert"));
+        addCourse_col_status.setCellValueFactory(new PropertyValueFactory<>("status"));
+        addCourse_tableView.setItems(CourseListDataAfterUpdate);
+        clearCourse();
+    }
+    @FXML
+    public ObservableList<CourseData> addCourseUpdateBtn(String courseToUpdated) {
+        ObservableList<CourseData> listData = FXCollections.observableArrayList();
+        try (BufferedReader reader = new BufferedReader(new FileReader("courses.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                int courseid = Integer.parseInt(parts[0].trim());
+                String Course = parts[1].trim();
+                String dep = parts[2].trim();
+                double price = parts[3].trim().isEmpty() ? 0.0 : Double.parseDouble(parts[3].trim());
+                java.sql.Date date = java.sql.Date.valueOf(parts[4].trim());
+                String status = parts[5].trim();
+                if(!courseToUpdated.equals(Course)){
+                    CourseData cData = new CourseData(courseid, Course, dep, price, date, status);
+                    listData.add(cData);
+                }
+                else{
+                    String Courseprime = addCourse_course.getText();
+                    String depprime =addCourse_department.getText();
+                    double priceprime = Double.parseDouble(addCourse_price.getText());
+                    LocalDate currentDate = LocalDate.now();
+                    java.sql.Date dprime=Date.valueOf(currentDate);
+                    String statusprime = addCourse_status.getValue();
+                    CourseData cData = new CourseData(courseid, Courseprime, depprime, priceprime, dprime, statusprime);
+                    listData.add(cData);
+                }
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return listData;
     }
 }

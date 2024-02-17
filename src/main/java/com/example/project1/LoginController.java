@@ -78,7 +78,7 @@ public class LoginController {
 
     }
         if(rButton2.isSelected()){
-            if(usernameField.getText().equals("FatimaSheaib")&&passwordField.getText().equals("123")){
+            if(usernameField.getText().equals("Fatimah")&&passwordField.getText().equals("123")){
                 ListData.teacher_username=usernameField.getText();
                 try {
                     ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
