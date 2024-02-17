@@ -24,7 +24,7 @@ public class TeacherData {
     private Date dateInsert;
     private String status;
 
-
+    private Boolean is_validated ;
     public TeacherData(String teacherID, String fullName, String gender,
                        String yearExperience, String experience, String department, Double salary, Date dateInsert,  String status) {
         this.teacherID = teacherID;
@@ -36,6 +36,7 @@ public class TeacherData {
         this.salary = salary;
         this.dateInsert = dateInsert;
         this.status = status;
+        this.is_validated =false;
     }
 
     public TeacherData(Integer id, String teacherID, String fullName,
@@ -47,6 +48,7 @@ public class TeacherData {
         this.salary = salary;
         this.dateInsert = dateInsert;
         this.status = status;
+        this.is_validated =false;
     }
 
     public TeacherData(Integer id, String teacherID, String fullName,
@@ -57,6 +59,7 @@ public class TeacherData {
         this.gender = gender;
         this.yearExperience = yearExperience;
         this.dateInsert = dateInsert;
+        this.is_validated =false;
     }
 
     public Integer getId() {
@@ -99,6 +102,6 @@ public class TeacherData {
     }
 
     public String toString(){
-        return this.teacherID+","+this.fullName+","+this.gender+","+this.yearExperience+","+this.experience+","+this.department+","+this.salary+","+this.dateInsert+","+this.status+"\n";
+        return this.teacherID+","+this.fullName+","+this.gender+","+this.yearExperience+","+this.experience+","+this.department+","+this.salary+","+this.dateInsert+","+this.status+","+  this.is_validated +"\n";
     }
 }

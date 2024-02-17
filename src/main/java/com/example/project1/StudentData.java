@@ -26,7 +26,7 @@ public class StudentData {
     private Date dateInsert;
     private String status;
 
-
+   private Boolean is_validated;
     public StudentData(String studentID, String fullName,
             Date birthDate, String year, String course, String section,String gender,String semester,
             Double payment, String statusPayment,Date dateInsert, String status) {
@@ -44,6 +44,7 @@ public class StudentData {
         this.image = image;
         this.dateInsert = dateInsert;
         this.status = status;
+        this.is_validated =false;
     }
 
 
@@ -62,6 +63,7 @@ public class StudentData {
         this.statusPayment = statusPayment;
         this.dateInsert = dateInsert;
         this.status = status;
+        this.is_validated =false;
     }
 
 
@@ -118,6 +120,6 @@ public class StudentData {
 
     public String toString(){
         return this.studentID+","+this.fullName+","+this.year+","+this.course+","+this.section+","
-                +this.payment+","+this.statusPayment+","+this.dateInsert+","+this.status+"\n";
+                +this.payment+","+this.statusPayment+","+this.dateInsert+","+this.status+","+this.is_validated+"\n";
     }
 }

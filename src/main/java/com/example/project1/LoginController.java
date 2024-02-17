@@ -59,7 +59,25 @@ public class LoginController {
                     e.printStackTrace();
                 }
             }
-        }
+            if(usernameField.getText().equals("Joumana")&&passwordField.getText().equals("123")){
+                ListData.center_username=usernameField.getText();
+                try {
+                    ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Teacher.fxml"));
+                    StackPane stackPane = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    Scene scene=new Scene(stackPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Teacher Page");
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+    }
+
     }
 
     @FXML
