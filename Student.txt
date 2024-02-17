@@ -1,6 +1,7 @@
-12,nour,2021,c111,A,2222222.0,Paid,2024-02-16,Enrolled
-90,nio[,null,null,B,11111.0,null,2024-02-16,null
-1,fatima sheaib,2024,c111,C,111.0,Pending,2024-02-16,Active
-2,mariam,2021,c111,B,111.0,Cancelled,2024-02-16,Enrolled
-3,anell,2021,c111,B,11.0,Paid,2024-02-16,Enrolled
-5,abed,2021,c2,A,1345.0,Pending,2024-02-16,Enrolled
+12,nour,2021,c111,A,2222222.0,Paid,2024-02-16,Enrolled,true
+90,nio[,null,null,B,11111.0,null,2024-02-16,null,true
+1,fatima sheaib,2024,c111,C,111.0,Pending,2024-02-16,Active,true
+2,mariam,2021,c111,B,111.0,Cancelled,2024-02-16,Enrolled,true
+3,anell,2021,c111,B,11.0,Paid,2024-02-16,Enrolled,true
+5,abed,2021,c2,A,1345.0,Pending,2024-02-16,Enrolled,true
+23,mmmm,2022,c2,C,1.1111111E7,Cancelled,2024-02-17,Active,true
