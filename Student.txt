@@ -1,0 +1,6 @@
+12,nour,2021,c111,A,2222222.0,Paid,2024-02-16,Enrolled
+90,nio[,null,null,B,11111.0,null,2024-02-16,null
+1,fatima sheaib,2024,c111,C,111.0,Pending,2024-02-16,Active
+2,mariam,2021,c111,B,111.0,Cancelled,2024-02-16,Enrolled
+3,anell,2021,c111,B,11.0,Paid,2024-02-16,Enrolled
+5,abed,2021,c2,A,1345.0,Pending,2024-02-16,Enrolled

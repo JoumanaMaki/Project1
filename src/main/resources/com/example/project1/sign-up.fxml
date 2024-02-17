@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="825.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.SignUpController">
+   <children>
+      <SplitPane dividerPositions="0.44063647490820074" layoutX="2.0" layoutY="-5.0" prefHeight="549.0" prefWidth="825.0" style="-fx-padding: 0;">
+         <items>
+            <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="-Infinity" prefHeight="557.0" prefWidth="357.0" style="-fx-background-color: #0096FF;">
+               <children>
+                  <ImageView fitHeight="316.0" fitWidth="282.0" layoutX="38.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/signup.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="114.0" layoutY="118.0" text="Sign Up">
+                     <font>
+                        <Font name="SansSerif Regular" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="627.0" prefWidth="458.0">
+               <children>
+                  <Label layoutX="162.0" layoutY="55.0" text=" Sign Up">
+                     <font>
+                        <Font name="SansSerif Regular" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" layoutX="218.0" layoutY="259.0" />
+                  <Label layoutX="106.0" layoutY="277.0" text="Username">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="321.0" text="Password">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="136.0" layoutY="409.0" mnemonicParsing="false" onAction="#signUpStudent" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #0096FF;" text="Create Student Account">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="203.0" layoutY="435.0" />
+                  <Button layoutX="109.0" layoutY="466.0" mnemonicParsing="false" onAction="#switchToLogin" style="-fx-text-fill: black; -fx-background-color: transparent;" text="Already have an account? Login" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="firstName" layoutX="218.0" layoutY="135.0" />
+                  <Label layoutX="104.0" layoutY="153.0" text="First Name">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastName" layoutX="218.0" layoutY="176.0" />
+                  <Label layoutX="104.0" layoutY="194.0" prefHeight="10.0" prefWidth="64.0" text="LastName">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="109.0" layoutY="231.0" text="Role">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="364.0" text="Confirm Password">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" layoutX="218.0" layoutY="303.0" />
+                  <PasswordField fx:id="confirmPassword" layoutX="218.0" layoutY="346.0" />
+                  <MenuButton layoutX="218.0" layoutY="226.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="152.0" style="-fx-background-color: #0096FF;" text="Choose Role" textFill="WHITE">
+                    <items>
+                        <MenuItem id="1" text="Teacher" />
+                        <MenuItem id="2" text="Center" />
+                        <MenuItem id="3" mnemonicParsing="false" text="Student" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
