@@ -314,7 +314,7 @@
                                  <children>
                                     <AnchorPane fx:id="dashboard_form" prefHeight="751.0" prefWidth="1124.0" stylesheets="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css">
                                        <children>
-                                          <ScrollPane layoutX="-8.0" layoutY="14.0" prefHeight="827.0" prefWidth="1132.0" stylesheets="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css" AnchorPane.bottomAnchor="-76.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                          <ScrollPane layoutX="14.0" prefHeight="827.0" prefWidth="1132.0" stylesheets="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css" AnchorPane.bottomAnchor="-76.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-21.0" AnchorPane.topAnchor="0.0">
                                              <content>
                                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="1131.0" stylesheets="Design/MainForm.css">
                                                    <children>
@@ -462,7 +462,7 @@
                                                       </Button>
                                                    </children>
                                                 </AnchorPane>
-                                                <ImageView fitHeight="415.0" fitWidth="217.0" layoutX="902.0" layoutY="272.0" pickOnBounds="true">
+                                                <ImageView fitHeight="368.0" fitWidth="143.0" layoutX="912.0" layoutY="295.0" pickOnBounds="true">
                                                    <image>
                                                       <Image url="@images/Inst.png" />
                                                    </image>
