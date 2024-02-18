@@ -1,10 +1,9 @@
-12,nour,2021,c111,A,2222222.0,Paid,2024-02-16,Enrolled,true
-90,nio[,null,null,B,11111.0,null,2024-02-16,null,true
-1,fatima sheaib,2024,c111,C,111.0,Pending,2024-02-16,Active,true
-2,mariam,2021,c111,B,111.0,Cancelled,2024-02-16,Enrolled,true
-3,anell,2021,c111,B,11.0,Paid,2024-02-16,Enrolled,true
-5,abed,2021,c2,A,1345.0,Pending,2024-02-16,Enrolled,true
-1200,fatima,2021,c2,B,12090.0,Pending,2024-02-17,Active,false
-112910,fatima abed ,2023,c1121212,D,1111.0,Paid,2024-02-17,Graduated,false
-1020,nour,2022,c10,C,10.0,Pending,2024-02-17,Enrolled,false
-587,hussein,null,null,null,1200.0,null,2024-02-18,null,false
+12,Nour,2021,c111,A,2222222.0,Paid,2024-02-16,Enrolled,true
+1,Fatima sheaib,2024,c111,C,111.0,Pending,2024-02-16,Active,true
+2,Mariam,2021,c111,B,111.0,Cancelled,2024-02-16,Enrolled,true
+3,Anell,2021,c111,B,11.0,Paid,2024-02-16,Enrolled,true
+5,Abed,2021,c2,A,1345.0,Pending,2024-02-16,Enrolled,true
+1200,Fatima,2021,c2,B,12090.0,Pending,2024-02-17,Active,false
+112910,Fatima abed ,2023,c1121212,D,1111.0,Paid,2024-02-17,Graduated,false
+1020,Nour,2022,c10,C,10.0,Pending,2024-02-17,Enrolled,false
+587,Hussein,null,null,null,1200.0,null,2024-02-18,null,false

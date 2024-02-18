@@ -93,7 +93,7 @@
                                     </Button>
                                     <ImageView fitHeight="135.0" fitWidth="188.0" layoutX="64.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@images/teacher.png" />
+                                          <Image url="@images/center.png" />
                                        </image>
                                     </ImageView>
                                  </children>

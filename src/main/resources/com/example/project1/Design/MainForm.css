@@ -72,3 +72,8 @@ and open the template in the editor.
     
     -fx-text-fill: #fff;
 }
+.std{
+    -fx-background-color: linear-gradient(to bottom right,#3D79B6,#0080FF);
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
