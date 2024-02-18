@@ -15,9 +15,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="1439.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.StudentPageController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="1369.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1.StudentPageController">
    <children>
-      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+      <ScrollPane prefWidth="1352.0">
          <content>
             <AnchorPane prefHeight="648.0" prefWidth="1356.0">
                <children>
@@ -38,7 +38,7 @@
                            <children>
                               <AnchorPane prefHeight="752.0" prefWidth="302.0" styleClass="main-bg" stylesheets="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css">
                                  <children>
-                                    <Button fx:id="TeacheraddStudent_btn" layoutX="31.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css" text="Available Course">
+                                    <Button fx:id="availabel_btn" layoutX="31.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" stylesheets="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css" text="Available Course">
                                        <graphic>
                                           <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.5em" />
                                        </graphic>
@@ -52,7 +52,7 @@
                                           <Font name="Arial" size="19.0" />
                                        </font>
                                     </Label>
-                                    <Button fx:id="Teacherdashboard_btn" layoutX="31.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" text="Dashboard" textFill="WHITE">
+                                    <Button fx:id="dashboard_btn" layoutX="31.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" text="Dashboard" textFill="WHITE">
                                        <stylesheets>
                                           <URL value="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/AddStudent.css" />
                                           <URL value="@../../../../../../../ProjectDone/src/main/resources/com/example/project1/Design/MainForm.css" />
@@ -65,7 +65,7 @@
                                           <Font name="Arial" size="15.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="TeacheraddCourse_btn" layoutX="31.0" layoutY="310.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" stylesheets="Design/MainForm.css" text="Enrolled Courses">
+                                    <Button fx:id="enrolled_btn" layoutX="31.0" layoutY="310.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" stylesheets="Design/MainForm.css" text="Enrolled Courses">
                                        <graphic>
                                           <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.5em" />
                                        </graphic>
@@ -74,7 +74,7 @@
                                           <String fx:value="btn" />
                                        </styleClass>
                                     </Button>
-                                    <Button fx:id="Teacherlogout" layoutX="31.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" stylesheets="Design/MainForm.css" text="Logout">
+                                    <Button fx:id="logout" layoutX="31.0" layoutY="379.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="200.0" stylesheets="Design/MainForm.css" text="Logout">
                                        <styleClass>
                                           <String fx:value="nav-btn" />
                                           <String fx:value="btn" />

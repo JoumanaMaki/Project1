@@ -111,6 +111,21 @@ public class LoginController {
 
 
         }
+        if(rButton4.isSelected()){
+            if(usernameField.getText().equals("James")&&passwordField.getText().equals("123")){
+                try {
+                    ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("StudentPage.fxml"));
+                    StackPane stackPane = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    Scene scene=new Scene(stackPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Student Page");
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }}
 
     }
 

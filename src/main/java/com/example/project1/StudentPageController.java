@@ -2,11 +2,16 @@ package com.example.project1;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class StudentPageController {
 
@@ -18,16 +23,6 @@ public class StudentPageController {
 
     @FXML
     private AnchorPane Student_Dashboard;
-
-    @FXML
-    private Button TeacheraddCourse_btn;
-
-    @FXML
-    private Button TeacheraddStudent_btn;
-
-    @FXML
-    private Button Teacherdashboard_btn;
-
     @FXML
     private Label Teachergreet_username;
 
@@ -35,7 +30,7 @@ public class StudentPageController {
     private Label TeacherheaderLabel;
 
     @FXML
-    private Button Teacherlogout;
+    private Button logout;
 
     @FXML
     private Button addStudent_addBtn;
@@ -93,10 +88,39 @@ public class StudentPageController {
     void addStudentUpdateBtn(ActionEvent event) {
 
     }
+    @FXML
+    private Button dashboard_btn;
+    @FXML
+    private Button availabel_btn;
 
     @FXML
-    void switchForm(ActionEvent event) {
-
+    private Button enrolled_btn;
+    @FXML
+    void switchForm(ActionEvent event) throws IOException {
+        if (event.getSource() == dashboard_btn) {
+            Student_Dashboard.setVisible(true);
+            DropCourse.setVisible(false);
+            Enroll_Course.setVisible(false);
+        }
+        if (event.getSource() == availabel_btn) {
+            Student_Dashboard.setVisible(false);
+            DropCourse.setVisible(false);
+            Enroll_Course.setVisible(true);
+        }
+        if (event.getSource() == enrolled_btn) {
+            Student_Dashboard.setVisible(false);
+            Enroll_Course.setVisible(false);
+            DropCourse.setVisible(true);
+        }
+        if(event.getSource()==logout){
+            ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+        }
     }
 
 }
