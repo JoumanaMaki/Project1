@@ -126,8 +126,24 @@ public class LoginController {
                     e.printStackTrace();
                 }
             }}
+        if(rButton1.isSelected()){
+            if(usernameField.getText().equals("Admin")&&passwordField.getText().equals("123")){
+                ListData.center_username=usernameField.getText();
+                try {
+                    ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AdminPage.fxml"));
+                    StackPane stackPane = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    Scene scene=new Scene(stackPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Admin Page");
+                    stage.show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
 
-    }
+    }}
 
     @FXML
     void switchToSignUp(ActionEvent event) {

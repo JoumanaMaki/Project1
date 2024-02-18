@@ -61,7 +61,19 @@ public class TeacherData {
         this.dateInsert = dateInsert;
         this.is_validated =false;
     }
-
+    public TeacherData(Integer id, String teacherID, String fullName, String gender, String yearExperience,
+                       String exp, String department, boolean is_validated, double salary, String semester) {
+        this.id = id;
+        this.teacherID = teacherID;
+        this.fullName = fullName;
+        this.gender = gender;
+        this.yearExperience = yearExperience;
+        this.experience = exp;
+        this.department = department;
+        this.is_validated = is_validated;
+        this.salary = salary;
+        this.status = semester;
+    }
     public Integer getId() {
         return id;
     }
@@ -100,8 +112,44 @@ public class TeacherData {
     public String getStatus() {
         return status;
     }
+    public boolean isValidated() {
+        return is_validated;
+    }
 
+    public void setValidated(boolean validated) {
+        this.is_validated = validated;
+    }
     public String toString(){
         return this.teacherID+","+this.fullName+","+this.gender+","+this.yearExperience+","+this.experience+","+this.department+","+this.salary+","+this.dateInsert+","+this.status+","+  this.is_validated +"\n";
+    }
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setYearExperience(String yearExperience) {
+        this.yearExperience = yearExperience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setSemester(String semester) {
+        this.status = semester;
     }
 }
