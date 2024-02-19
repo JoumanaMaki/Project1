@@ -56,7 +56,7 @@
                   <Label layoutX="203.0" layoutY="435.0" />
                   <Button layoutX="150.0" layoutY="436.0" mnemonicParsing="false" onAction="#switchToSignUp" style="-fx-background-color: transparent;" text="Create an Account" underline="true">
                      <font>
-                        <Font name="Arial Bold" size="17.0" />
+                        <Font name="Arial" size="17.0" />
                      </font>
                   </Button>
                   <RadioButton fx:id="rButton1" layoutX="22.0" layoutY="132.0" mnemonicParsing="false" text="Administrator">

@@ -48,7 +48,7 @@
                         <Font name="SansSerif Regular" size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="139.0" layoutY="414.0" mnemonicParsing="false" onAction="#signUpStudent" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #0096FF; -fx-font-size: 20px;" text="Create Account">
+                  <Button layoutX="139.0" layoutY="414.0" mnemonicParsing="false" onAction="#signUpStudent" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #0096FF; -fx-font-size: 20px;" text="Create Account" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="25.0" />
                      </font>
@@ -56,7 +56,7 @@
                   <Label layoutX="203.0" layoutY="435.0" />
                   <Button layoutX="129.0" layoutY="477.0" mnemonicParsing="false" onAction="#switchToLogin" style="-fx-text-fill: black; -fx-background-color: transparent; -fx-font-size: 17px;" text="Already have an account? Login" underline="true">
                      <font>
-                        <Font name="Arial Bold" size="18.0" />
+                        <Font name="Arial" size="16.0" />
                      </font>
                   </Button>
                   <TextField fx:id="firstName" layoutX="218.0" layoutY="149.0" />

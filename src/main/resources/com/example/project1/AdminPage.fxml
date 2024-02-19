@@ -183,7 +183,7 @@
                                     </Label>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="dashboard_form" prefHeight="629.0" prefWidth="1049.0" visible="false">
+                              <AnchorPane fx:id="dashboard_form" prefHeight="629.0" prefWidth="1049.0">
                                  <children>
                                     <AnchorPane layoutX="23.0" layoutY="161.0" prefHeight="233.0" prefWidth="349.0" />
                                     <ScrollPane prefHeight="162.0" prefWidth="1081.0">
