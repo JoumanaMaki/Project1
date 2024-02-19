@@ -94,7 +94,7 @@ public class LoginController {
                 }
             }
             else if(usernameField.getText().equals("Joumana")&&passwordField.getText().equals("123")){
-                ListData.center_username=usernameField.getText();
+                ListData.teacher_username=usernameField.getText();
                 try {
                     ((Stage)(((javafx.scene.Node) event.getSource()).getScene().getWindow())).close();
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("TeacherPage.fxml"));

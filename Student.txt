@@ -7,3 +7,4 @@
 112910,Fatima abed ,2023,c1121212,D,1111.0,Paid,2024-02-17,Graduated,false
 1020,Nour,2022,c10,C,10.0,Pending,2024-02-17,Enrolled,false
 587,Hussein,null,null,null,1200.0,null,2024-02-18,null,false
+HASAN,JOMAA,2021,null,C,12000.0,null,2024-02-19,null,false

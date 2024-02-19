@@ -165,7 +165,7 @@
                                              <font>
                                                 <Font name="Arial Bold" size="27.0" />
                                              </font></CheckBox>
-                                          <Button fx:id="edit_center" layoutX="83.0" layoutY="368.0" mnemonicParsing="false" onAction="#editcenter" prefHeight="43.0" prefWidth="134.0" style="-fx-background-color: green;" text="Edit" textFill="WHITE">
+                                          <Button fx:id="edit_center" layoutX="83.0" layoutY="368.0" mnemonicParsing="false" onAction="#editcenter" prefHeight="43.0" prefWidth="134.0" style="-fx-background-color: blue;" text="Edit" textFill="WHITE">
                                              <font>
                                                 <Font name="Arial Bold" size="20.0" />
                                              </font></Button>
@@ -176,14 +176,14 @@
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <Label layoutX="605.0" layoutY="37.0" text="Center Management" textFill="#1a07ef">
+                                    <Label layoutX="632.0" layoutY="34.0" text="Center Management" textFill="#1a07ef">
                                        <font>
                                           <Font name="Arial" size="25.0" />
                                        </font>
                                     </Label>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="dashboard_form" prefHeight="629.0" prefWidth="1049.0">
+                              <AnchorPane fx:id="dashboard_form" prefHeight="629.0" prefWidth="1049.0" visible="false">
                                  <children>
                                     <AnchorPane layoutX="23.0" layoutY="161.0" prefHeight="233.0" prefWidth="349.0" />
                                     <ScrollPane prefHeight="162.0" prefWidth="1081.0">
@@ -366,7 +366,7 @@
                                              <font>
                                                 <Font name="Arial" size="13.0" />
                                              </font></Label>
-                                          <Button fx:id="edit_teacher" layoutX="663.0" layoutY="160.0" mnemonicParsing="false" onAction="#editteacher" prefHeight="41.0" prefWidth="106.0" style="-fx-background-color: green;" text="Edit" textFill="WHITE">
+                                          <Button fx:id="edit_teacher" layoutX="663.0" layoutY="160.0" mnemonicParsing="false" onAction="#editteacher" prefHeight="41.0" prefWidth="106.0" style="-fx-background-color: blue;" text="Edit" textFill="WHITE">
                                              <stylesheets>
                                                 <URL value="@Design/AddStudent.css" />
                                                 <URL value="@Design/MainForm.css" />
@@ -457,13 +457,13 @@
                                              <font>
                                                 <Font name="Arial" size="21.0" />
                                              </font></Button>
-                                          <Button fx:id="edit_student" layoutX="670.0" layoutY="168.0" mnemonicParsing="false" onAction="#editstudent" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: green;" text="Edit" textFill="WHITE">
+                                          <Button fx:id="edit_student" layoutX="670.0" layoutY="168.0" mnemonicParsing="false" onAction="#editstudent" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: blue;" text="Edit" textFill="WHITE">
                                              <stylesheets>
                                                 <URL value="@Design/AddStudent.css" />
                                                 <URL value="@Design/MainForm.css" />
                                              </stylesheets>
                                              <font>
-                                                <Font name="Arial Bold" size="21.0" />
+                                                <Font name="Arial" size="21.0" />
                                              </font>
                                           </Button>
                                           <CheckBox fx:id="validate_student" layoutX="294.0" layoutY="137.0" mnemonicParsing="false" text="Validate">
